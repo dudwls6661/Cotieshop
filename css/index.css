@@ -151,7 +151,7 @@ main .main {
 }
 
 
-main .main>h1 {
+main .main>h2 {
     width: 100%;
     font-size: min(144px, 10vw);
     text-align: center;
