@@ -237,7 +237,7 @@ main .warp img:nth-child(2):hover {
 main .warp img:nth-child(3) {
     right: 100px;
     top: 250px;
-    z-index: 999;
+    z-index: 99;
 }
 
 main .warp img:nth-child(3):hover {
