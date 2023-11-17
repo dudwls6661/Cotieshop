@@ -4,7 +4,7 @@ $(document).ready(function () {
 
         let win = $(window);
         let header = $(this);
-        let main = $("main .main>h1");
+        let main = $("main .main>h2");
         let spot = main.offset().top;
 
         win.scroll(function(){
@@ -133,7 +133,7 @@ $(document).ready(function () {
 
         let win = $(window);
         let top = $(this);
-        let main = $("#sec1>h1");
+        let main = $("#sec1>h2");
         let spot = main.offset().top;
 
         win.scroll(function(){
