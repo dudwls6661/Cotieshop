@@ -38,6 +38,11 @@ $(document).ready(function () {
         },function(){
             $(".mouse>img").attr('src','img/cursor-pointer.png')
         });
+        $(".big_video p").hover(function(){
+            $(".mouse>img").attr('src','img/cursor-hand.png')
+        },function(){
+            $(".mouse>img").attr('src','img/cursor-pointer.png')
+        });
 
         $("#sec2 .contents .con").hover(function(){
             $(".mouse>img").attr('src','img/cursor-heart.png')
@@ -69,6 +74,18 @@ $(document).ready(function () {
     }, function () {
         $("#efect").find('span').stop(true).animate({ opacity: '0' })
     });
+
+    $("#efect").click(function () {
+        $(".big_video").stop(true).animate({opacity : '1'});
+        $(".big_video").css({zIndex: '999'})
+    });
+    $(".big_video p").click(function () {
+        $(".big_video").stop(true).css({opacity : '0'});
+        $(".big_video").css({zIndex: '-99'})
+    });
+
+
+
 
 
     $("#sec2 .contents .con .img img").hover(function () {
@@ -134,5 +151,9 @@ $(document).ready(function () {
     });
 
     
+
+
+
+
 
 });
