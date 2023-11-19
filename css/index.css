@@ -1,10 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 * {
-    padding: 0;
-    margin: 0;
-    font-family: 'Noto Sans KR', sans-serif;
-    box-sizing: border-box;
     cursor: none;
 }
 
@@ -38,6 +78,8 @@ header {
     position: fixed;
     top: 0;
     z-index: 999;
+    font-family: 'Noto Sans KR', sans-serif;
+
 }
 header h1{
     font-size: 0;
@@ -47,9 +89,7 @@ header h1{
     border-bottom: 2px solid #000;
 
 }
-.show{
-    opacity: 1;
-}
+
 
 
 header ul {
@@ -74,16 +114,13 @@ header>ul>li {
 
 header>ul>li:hover {
     color: rgb(228, 173, 55);
-    transition: all 0.7s;
 }
 header>ul>li:nth-child(7):hover{
     transform: scale(1.2);
-    transition: all 0.7s;
     color: #000;
 } 
 header>ul>li:nth-child(6):hover {
     transform: scale(1.2);
-    transition: all 0.7s;
 }
 
 header>ul>li>a {
@@ -115,13 +152,13 @@ header .subul {
     padding: 20px 10px;
     flex-direction: column;
     position: absolute;
-    left: -11px;
+    left: -22px;
     background-color: rgba(240, 237, 230, 1);
     font-size: 16px;
     font-weight: 600;
-    display: none;
     border: 2px solid #000;
     border-top: none;
+    display: none;
 }
 
 header .subul li {
@@ -134,7 +171,6 @@ header .subul li {
 
 header .subul li a:hover {
     color: rgb(228, 173, 55);
-    transition: all 0.7s;
     border-bottom: 2px solid rgb(228, 173, 55);
 }
 
@@ -143,6 +179,7 @@ main {
     overflow: hidden;
     position: relative;
     padding-top: 20vh;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 main .main {
@@ -218,7 +255,7 @@ main .warp img {
 main .warp img:nth-child(1) {
     top: -100px;
     left: 600px;
-    z-index: 99;
+    z-index: 999;
 }
 
 main .warp img:nth-child(1):hover {
@@ -249,6 +286,7 @@ main .warp img:nth-child(3):hover {
     overflow: hidden;
     margin: auto;
     margin-top: 50px;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 #sec1>h2 {
@@ -334,6 +372,7 @@ main .warp img:nth-child(3):hover {
     width: 80%;
     height: 55vw;
     margin: auto;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 #sec2>h2 {
@@ -379,6 +418,7 @@ main .warp img:nth-child(3):hover {
 
 #sec3 {
     width: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 #sec3 .innerbox {
@@ -429,6 +469,7 @@ footer {
     width: 100%;
     background-color: #000;
     margin-top: 180px;
+    font-family: 'Noto Sans KR', sans-serif;
 
 }
 
@@ -559,6 +600,7 @@ footer .top p {
     top: 0;
     left: 0;
     z-index: 9999;
+    font-family: 'Noto Sans KR', sans-serif;
     display: none;
 }
 .search .ex{
@@ -641,6 +683,7 @@ input[type="text"]::placeholder{
     left: 0;
     background-color: rgb(240, 237, 230);
     z-index: 999;
+    font-family: 'Noto Sans KR', sans-serif;
     display: none;
 }
 .small_menu .ex{
@@ -1243,7 +1286,7 @@ input[type="text"]::placeholder{
 
     #sec2 .contents .con .img img {
         padding: 0 10px;
-        width: 100%;
+        width: 90%;
     }
 
     #sec2 .contents .con .img {
@@ -1558,7 +1601,7 @@ input[type="text"]::placeholder{
 
     #sec2 .contents .con .img img {
         padding: 0 10px;
-        width: 100%;
+        width: 90%;
     }
 
     #sec2 .contents .con .img {
