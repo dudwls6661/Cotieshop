@@ -135,6 +135,7 @@ $(document).ready(function () {
         let top = $(this);
         let main = $("#sec1>h2");
         let spot = main.offset().top;
+        let start = $("html,body")
 
         win.scroll(function(){
             if(win.scrollTop() > spot ){
@@ -146,7 +147,7 @@ $(document).ready(function () {
         })
 
         $(top).click(function(){
-            $(window).scrollTop(0);
+            $(start).animate({scrollTop : 0},500)
         });
     });
 
