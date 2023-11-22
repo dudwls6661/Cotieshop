@@ -17,52 +17,7 @@ $(document).ready(function () {
     });
 
 
-//////mouseevent/////////
-  $(window).mousemove(function(){
-          $(".mouse>img").css({
-               position: 'absolute', 
-               zIndex : '9999',  
-               left: event.pageX+2,  
-               top: event.pageY+2,  
-          });
-     });
 
-        $("button").hover(function(){
-            $(".mouse>img").attr('src','img/cursor-hand.png')
-        },function(){
-            $(".mouse>img").attr('src','img/cursor-pointer.png')
-        });
-
-        $("#efect").hover(function(){
-            $(".mouse>img").attr('src','img/cursor-see.png')
-        },function(){
-            $(".mouse>img").attr('src','img/cursor-pointer.png')
-        });
-        $(".big_video p").hover(function(){
-            $(".mouse>img").attr('src','img/cursor-hand.png')
-        },function(){
-            $(".mouse>img").attr('src','img/cursor-pointer.png')
-        });
-
-        $("#sec2 .contents .con").hover(function(){
-            $(".mouse>img").attr('src','img/cursor-heart.png')
-        },function(){
-            $(".mouse>img").attr('src','img/cursor-pointer.png')
-        });
-
-        $("#sec3 .img .inner").hover(function(){
-            $(".mouse>img").attr('src','img/cursor-heart.png')
-        },function(){
-            $(".mouse>img").attr('src','img/cursor-pointer.png')
-        });
-
-        $("footer .left .fbox .save").hover(function(){
-            $(".mouse>img").attr('src','img/cursor-tiny.png')
-        },function(){
-            $(".mouse>img").attr('src','img/cursor-pointer.png')
-        });
-
-//////mouseevent/////////
 
 
 
