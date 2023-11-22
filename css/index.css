@@ -25,9 +25,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
+
 ol, ul {
 	list-style: none;
 }
@@ -44,11 +42,11 @@ table {
 	border-spacing: 0;
 }
 
-* {
-    cursor: none;
-}
+
 
 body {
+    line-height: 1;
+    cursor: url("../img/cursor-pointer.png"), auto;
     background-color: rgb(240, 237, 230);
     position: relative;
     z-index: -9999;
@@ -66,6 +64,26 @@ li {
 img {
     display: block;
     max-width: 100%;
+}
+
+a:hover{
+    cursor: url("../img/cursor-pointer.png"), auto;
+}
+button:hover{
+    cursor: url("../img/cursor-hand.png"), auto;
+}
+#efect:hover{
+    cursor: url("../img/cursor-see.png"), auto;
+}
+#sec2 .contents .con img:hover,
+#sec3 .img .inner span:hover{
+    cursor: url("../img/cursor-heart.png"), auto;
+}
+footer a:hover,
+footer .left .fbox .save:hover,
+.ex p:hover
+{
+    cursor: url("../img/cursor-tiny.png"), auto;
 }
 
 header {
